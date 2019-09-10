@@ -1,0 +1,39 @@
+Pasos a seguir para instalar la aplicación Dolibarr adaptada a "Rondalla de Fraga"
+
+Paso 1:
+Descargar la versión 10.0.0 de la aplicación Dolibarr para windows, desde la web: https://sourceforge.net/projects/dolibarr/files/
+
+Paso 2:
+Instalar la aplicación siguiendo los pasos del instalador. 
+
+Paso 3:
+Una vez se finaliza la instalación, no abrir la aplicación. Primero hay que configurarla.
+
+Paso 4:
+Descargar del repositorio los ficheros "documentos_dolibarr.zip001", "documentos_dolibarr.zip002" y "documentos_dolibarr.zip003", y descomprimirlos.
+Desacargar del repositorio el fichero "imagenes_y_sql.zip" y descomprimirlo.
+
+Paso 4:
+Eliminar la carpeta htdocs, y añadir la descomprimida en el paso 4. La ruta de la carpeta es: C:/dolibarr/www/dolibarr/
+(Si la eliminación de la carpeta da error, reiniciar el ordenador)
+
+Paso 5-a:
+Si no se ha instalado en el directorio C:. Se deberá modificar el fichero de configuración. Este archivo se encuentra en C:\dolibarr\www\dolibarr\htdocs\conf.
+Se deberá modificar el directorio C: por dónde esta instalada la aplicación.
+
+Paso 5:
+Eliminar la base de datos generada por dolibarr e importar datos.
+
+Para importar datos, se deberá crear una nueva base de datos desde phpmyadmin (Disponible con la instalación de Dolibarr).
+Ejecutar el fichero rundoliadmin.bat que se encuentra en la ruta C:/dolibarr/ y abrir la aplicación. La contraseña y usuario por defecto es root/changeme
+Eliminar la base de datos dolibarr. Posteriormente, crear una nueva base de datos. Darle el nombre de Dolibarr e importar los ficheros .sql obtenidos en el paso 4.
+
+Paso 5: Añadir logo
+Se deberá insertar la carperta logos, obtenida en el paso 4, en la ruta C:/dolibarr/dolibarr_documents/mycompany/
+
+Paso 6:
+Para asegurarse que los cambios se han añadido correctamente, reiniciar el ordenador. Y posteriormente ya se puede abrir la aplicación. 
+Usuario dado de alta para poder visualizar todos los datos almacenados: ElisaRP, contraseña: cxb4905z.
+
+Nota: Hay que tener en cuenta que este tutorial se ha realizado pensando que la instalación se realizará sobre el directorio C:. 
+Si se usa otro, se deberán modificar las rutas indicadas en el tutorial, por el directorio de instalación.
